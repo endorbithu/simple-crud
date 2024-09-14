@@ -1,0 +1,32 @@
+{
+  "name": "delocalzrt/simple-crud",
+  "authors": [
+    {
+      "name": "Magyar Bertalan",
+      "email": "magyar.bertalan@delocal.hu"
+    }
+  ],
+  "require": {
+    "illuminate/contracts": "^7.0|^8.0|^9.0",
+    "delocalzrt/datatable": "*",
+    "intervention/image": "2.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "DelocalZrt\\SimpleCrud\\": "src"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "DelocalZrt\\SimpleCrud\\Providers\\SimpleCrudServiceProvider"
+      ]
+    }
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://delocalzrt.repo.repman.io"
+    }
+  ]
+}
