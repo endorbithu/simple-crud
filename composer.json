@@ -3,11 +3,11 @@
   "authors": [
     {
       "name": "Magyar Bertalan",
-      "email": "magyar.bertalan@delocal.hu"
+      "email": "magyar.bertalan@dendorbit.hu"
     }
   ],
   "require": {
-    "illuminate/contracts": "^7.0|^8.0|^9.0",
+    "illuminate/contracts": "^8.0|^9.0|^10.0|^11.0",
     "endorbithu/datatable": "*",
     "intervention/image": "2.*"
   },
