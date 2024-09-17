@@ -1,8 +1,8 @@
 <?php
 
-namespace DelocalZrt\SimpleCrud\Controllers;
+namespace Endorbit\SimpleCrud\Controllers;
 
-use DelocalZrt\SimpleCrud\Services\SimpleCrudHelper;
+use Endorbit\SimpleCrud\Services\SimpleCrudHelper;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller as BaseController;
 

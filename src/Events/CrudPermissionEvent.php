@@ -6,9 +6,9 @@
  * Time: 10:33
  */
 
-namespace DelocalZrt\SimpleCrud\Events;
+namespace Endorbit\SimpleCrud\Events;
 
-use DelocalZrt\SimpleCrud\Services\CrudEvent;
+use Endorbit\SimpleCrud\Services\CrudEvent;
 use Illuminate\Broadcasting\InteractsWithSockets;
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;

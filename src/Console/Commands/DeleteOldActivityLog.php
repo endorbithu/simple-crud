@@ -1,8 +1,8 @@
 <?php
 
-namespace DelocalZrt\SimpleCrud\Console\Commands;
+namespace Endorbit\SimpleCrud\Console\Commands;
 
-use DelocalZrt\SimpleCrud\Models\SimpleCrudActivityLog;
+use Endorbit\SimpleCrud\Models\SimpleCrudActivityLog;
 use Illuminate\Console\Command;
 
 class DeleteOldActivityLog extends Command

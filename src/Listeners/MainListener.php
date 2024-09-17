@@ -6,24 +6,24 @@
  * Time: 13:37
  */
 
-namespace DelocalZrt\SimpleCrud\Listeners;
+namespace Endorbit\SimpleCrud\Listeners;
 
 
-use DelocalZrt\SimpleCrud\Contracts\SimpleCrudListenerInterface;
-use DelocalZrt\SimpleCrud\Events\CrudAfterCreatedEvent;
-use DelocalZrt\SimpleCrud\Events\CrudAfterDeleteEvent;
-use DelocalZrt\SimpleCrud\Events\CrudAfterSaveEvent;
-use DelocalZrt\SimpleCrud\Events\CrudAfterUpdatedEvent;
-use DelocalZrt\SimpleCrud\Events\CrudBeforeDeleteEvent;
-use DelocalZrt\SimpleCrud\Events\CrudBeforeRenderFormEvent;
-use DelocalZrt\SimpleCrud\Events\CrudBeforeSaveEvent;
-use DelocalZrt\SimpleCrud\Events\CrudBeforeSendRowsToDatatableEvent;
-use DelocalZrt\SimpleCrud\Events\CrudBeforeShowEntityEvent;
-use DelocalZrt\SimpleCrud\Events\CrudPermissionEvent;
-use DelocalZrt\SimpleCrud\Events\CrudPreparingDatatableEvent;
-use DelocalZrt\SimpleCrud\Events\CrudPreparingQueryBuilderForDatatableEvent;
-use DelocalZrt\SimpleCrud\Models\SimpleCrudActivityLog;
-use DelocalZrt\SimpleCrud\Services\SimpleCrudHelper;
+use Endorbit\SimpleCrud\Contracts\SimpleCrudListenerInterface;
+use Endorbit\SimpleCrud\Events\CrudAfterCreatedEvent;
+use Endorbit\SimpleCrud\Events\CrudAfterDeleteEvent;
+use Endorbit\SimpleCrud\Events\CrudAfterSaveEvent;
+use Endorbit\SimpleCrud\Events\CrudAfterUpdatedEvent;
+use Endorbit\SimpleCrud\Events\CrudBeforeDeleteEvent;
+use Endorbit\SimpleCrud\Events\CrudBeforeRenderFormEvent;
+use Endorbit\SimpleCrud\Events\CrudBeforeSaveEvent;
+use Endorbit\SimpleCrud\Events\CrudBeforeSendRowsToDatatableEvent;
+use Endorbit\SimpleCrud\Events\CrudBeforeShowEntityEvent;
+use Endorbit\SimpleCrud\Events\CrudPermissionEvent;
+use Endorbit\SimpleCrud\Events\CrudPreparingDatatableEvent;
+use Endorbit\SimpleCrud\Events\CrudPreparingQueryBuilderForDatatableEvent;
+use Endorbit\SimpleCrud\Models\SimpleCrudActivityLog;
+use Endorbit\SimpleCrud\Services\SimpleCrudHelper;
 
 class MainListener implements SimpleCrudListenerInterface
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace DelocalZrt\SimpleCrud\Providers;
+namespace Endorbit\SimpleCrud\Providers;
 
 
-use DelocalZrt\SimpleCrud\Listeners\MainListener;
+use Endorbit\SimpleCrud\Listeners\MainListener;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
 
 

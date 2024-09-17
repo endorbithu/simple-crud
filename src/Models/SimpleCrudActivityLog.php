@@ -1,8 +1,8 @@
 <?php
 
-namespace DelocalZrt\SimpleCrud\Models;
+namespace Endorbit\SimpleCrud\Models;
 
-use DelocalZrt\SimpleCrud\Contracts\CrudModelInterface;
+use Endorbit\SimpleCrud\Contracts\CrudModelInterface;
 use Illuminate\Database\Eloquent\Model;
 
 class SimpleCrudActivityLog extends Model implements CrudModelInterface

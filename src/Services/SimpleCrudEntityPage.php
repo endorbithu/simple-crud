@@ -6,11 +6,11 @@
  * Time: 10:20
  */
 
-namespace DelocalZrt\SimpleCrud\Services;
+namespace Endorbit\SimpleCrud\Services;
 
 
-use DelocalZrt\SimpleCrud\Contracts\FieldCollectionInterface;
-use DelocalZrt\SimpleCrud\Contracts\SimpleCrudEntityPageInterface;
+use Endorbit\SimpleCrud\Contracts\FieldCollectionInterface;
+use Endorbit\SimpleCrud\Contracts\SimpleCrudEntityPageInterface;
 
 class SimpleCrudEntityPage implements FieldCollectionInterface, SimpleCrudEntityPageInterface
 {

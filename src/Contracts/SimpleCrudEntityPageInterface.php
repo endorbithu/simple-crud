@@ -6,10 +6,10 @@
  * Time: 10:21
  */
 
-namespace DelocalZrt\SimpleCrud\Contracts;
+namespace Endorbit\SimpleCrud\Contracts;
 
 
-use DelocalZrt\SimpleCrud\Services\CrudEvent;
+use Endorbit\SimpleCrud\Services\CrudEvent;
 
 interface SimpleCrudEntityPageInterface extends FieldCollectionInterface
 {

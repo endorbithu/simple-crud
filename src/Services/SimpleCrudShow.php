@@ -6,11 +6,11 @@
  * Time: 10:20
  */
 
-namespace DelocalZrt\SimpleCrud\Services;
+namespace Endorbit\SimpleCrud\Services;
 
 
 use Carbon\Carbon;
-use DelocalZrt\SimpleCrud\Contracts\CrudModelInterface;
+use Endorbit\SimpleCrud\Contracts\CrudModelInterface;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;

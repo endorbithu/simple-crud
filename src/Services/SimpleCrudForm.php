@@ -6,7 +6,7 @@
  * Time: 10:20
  */
 
-namespace DelocalZrt\SimpleCrud\Services;
+namespace Endorbit\SimpleCrud\Services;
 
 
 class SimpleCrudForm extends SimpleCrudEntityPage

@@ -1,31 +1,31 @@
 <?php
 
-namespace DelocalZrt\SimpleCrud\Controllers;
+namespace Endorbit\SimpleCrud\Controllers;
 
-use DelocalZrt\Datatable\Services\Datatable;
-use DelocalZrt\SimpleCrud\Contracts\CrudModelInterface;
-use DelocalZrt\SimpleCrud\Events\CrudAfterCreatedEvent;
-use DelocalZrt\SimpleCrud\Events\CrudAfterDeleteEvent;
-use DelocalZrt\SimpleCrud\Events\CrudAfterSaveEvent;
-use DelocalZrt\SimpleCrud\Events\CrudAfterUpdatedEvent;
-use DelocalZrt\SimpleCrud\Events\CrudBeforeDeleteEvent;
-use DelocalZrt\SimpleCrud\Events\CrudBeforeRenderFormEvent;
-use DelocalZrt\SimpleCrud\Events\CrudBeforeSaveEvent;
-use DelocalZrt\SimpleCrud\Events\CrudBeforeSendRowsToDatatableEvent;
-use DelocalZrt\SimpleCrud\Events\CrudBeforeShowEntityEvent;
-use DelocalZrt\SimpleCrud\Events\CrudPermissionEvent;
-use DelocalZrt\SimpleCrud\Events\CrudPreparingDatatableEvent;
-use DelocalZrt\SimpleCrud\Events\CrudPreparingQueryBuilderForDatatableEvent;
-use DelocalZrt\SimpleCrud\Exceptions\SimpleCrudPermissionDeniedException;
-use DelocalZrt\SimpleCrud\Exceptions\UserCanSeeException;
-use DelocalZrt\SimpleCrud\Models\SimpleCrudActivityLog;
-use DelocalZrt\SimpleCrud\Services\ConfigInterpreting;
-use DelocalZrt\SimpleCrud\Services\CrudEvent;
-use DelocalZrt\SimpleCrud\Services\EntitySave;
-use DelocalZrt\SimpleCrud\Services\SavingRequestCollection;
-use DelocalZrt\SimpleCrud\Services\SimpleCrudForm;
-use DelocalZrt\SimpleCrud\Services\SimpleCrudHelper;
-use DelocalZrt\SimpleCrud\Services\SimpleCrudShow;
+use Endorbit\Datatable\Services\Datatable;
+use Endorbit\SimpleCrud\Contracts\CrudModelInterface;
+use Endorbit\SimpleCrud\Events\CrudAfterCreatedEvent;
+use Endorbit\SimpleCrud\Events\CrudAfterDeleteEvent;
+use Endorbit\SimpleCrud\Events\CrudAfterSaveEvent;
+use Endorbit\SimpleCrud\Events\CrudAfterUpdatedEvent;
+use Endorbit\SimpleCrud\Events\CrudBeforeDeleteEvent;
+use Endorbit\SimpleCrud\Events\CrudBeforeRenderFormEvent;
+use Endorbit\SimpleCrud\Events\CrudBeforeSaveEvent;
+use Endorbit\SimpleCrud\Events\CrudBeforeSendRowsToDatatableEvent;
+use Endorbit\SimpleCrud\Events\CrudBeforeShowEntityEvent;
+use Endorbit\SimpleCrud\Events\CrudPermissionEvent;
+use Endorbit\SimpleCrud\Events\CrudPreparingDatatableEvent;
+use Endorbit\SimpleCrud\Events\CrudPreparingQueryBuilderForDatatableEvent;
+use Endorbit\SimpleCrud\Exceptions\SimpleCrudPermissionDeniedException;
+use Endorbit\SimpleCrud\Exceptions\UserCanSeeException;
+use Endorbit\SimpleCrud\Models\SimpleCrudActivityLog;
+use Endorbit\SimpleCrud\Services\ConfigInterpreting;
+use Endorbit\SimpleCrud\Services\CrudEvent;
+use Endorbit\SimpleCrud\Services\EntitySave;
+use Endorbit\SimpleCrud\Services\SavingRequestCollection;
+use Endorbit\SimpleCrud\Services\SimpleCrudForm;
+use Endorbit\SimpleCrud\Services\SimpleCrudHelper;
+use Endorbit\SimpleCrud\Services\SimpleCrudShow;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Support\Facades\App;
@@ -51,7 +51,7 @@ class IndexController extends BaseController
             return;
         }
 
-        //\DelocalZrt\Datatable\Jobs\ProcessBigCsvExportToFile kell, hogy meg tudja hívni
+        //\Endorbit\Datatable\Jobs\ProcessBigCsvExportToFile kell, hogy meg tudja hívni
         $request = App::make(Request::class);
 
         //TODO FIXME, itt kivonjuk minden middleware alól az xhr kéréseket, mert nincs megoldva (az IP ellenőrzésen kívül), hogy hitelesítse a requestet

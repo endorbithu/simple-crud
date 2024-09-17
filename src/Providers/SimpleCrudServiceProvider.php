@@ -1,8 +1,8 @@
 <?php
 
-namespace DelocalZrt\SimpleCrud\Providers;
+namespace Endorbit\SimpleCrud\Providers;
 
-use DelocalZrt\SimpleCrud\Console\Commands\DeleteOldActivityLog;
+use Endorbit\SimpleCrud\Console\Commands\DeleteOldActivityLog;
 use Illuminate\Console\Scheduling\Schedule;
 
 class SimpleCrudServiceProvider extends \Illuminate\Support\ServiceProvider

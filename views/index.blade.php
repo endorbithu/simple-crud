@@ -31,7 +31,7 @@
     @elseif(isset($success) && !empty($success))
         <div id="simplecrud-success" class="{{ config('simplecrud.html_class.success-msg') }}">{{ $esuccess }}</div>
     @endif
-        <h2 style="" class="simplecrud-h2 {{ config('simplecrud.html_class.h2_tag') }}">{{ substr(strip_tags(trim(\DelocalZrt\SimpleCrud\Services\SimpleCrudHelper::getTextValueByLang($title))),0, 100) }}</h2>
+        <h2 style="" class="simplecrud-h2 {{ config('simplecrud.html_class.h2_tag') }}">{{ substr(strip_tags(trim(\Endorbit\SimpleCrud\Services\SimpleCrudHelper::getTextValueByLang($title))),0, 100) }}</h2>
 
     @isset($description)
         <div id="simplecrud-description-container" class="simplecrud-description-container {{ config('simplecrud.html_class.simplecrud-description-container') }}">

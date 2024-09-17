@@ -6,11 +6,11 @@
  * Time: 10:20
  */
 
-namespace DelocalZrt\SimpleCrud\Services;
+namespace Endorbit\SimpleCrud\Services;
 
 
-use DelocalZrt\SimpleCrud\Contracts\FieldCollectionInterface;
-use DelocalZrt\SimpleCrud\Contracts\SimpleCrudShowInterface;
+use Endorbit\SimpleCrud\Contracts\FieldCollectionInterface;
+use Endorbit\SimpleCrud\Contracts\SimpleCrudShowInterface;
 
 class SavingRequestCollection implements FieldCollectionInterface
 {

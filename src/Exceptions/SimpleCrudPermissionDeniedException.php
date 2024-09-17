@@ -1,6 +1,6 @@
 <?php
 
-namespace DelocalZrt\SimpleCrud\Exceptions;
+namespace Endorbit\SimpleCrud\Exceptions;
 
 class SimpleCrudPermissionDeniedException extends \Exception
 {

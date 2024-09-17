@@ -6,11 +6,11 @@
  * Time: 10:33
  */
 
-namespace DelocalZrt\SimpleCrud\Events;
+namespace Endorbit\SimpleCrud\Events;
 
-use DelocalZrt\Datatable\Contracts\DatatableConfigInterface;
-use DelocalZrt\Datatable\Contracts\DatatableServiceInterface;
-use DelocalZrt\SimpleCrud\Services\CrudEvent;
+use Endorbit\Datatable\Contracts\DatatableConfigInterface;
+use Endorbit\Datatable\Contracts\DatatableServiceInterface;
+use Endorbit\SimpleCrud\Services\CrudEvent;
 use Illuminate\Broadcasting\InteractsWithSockets;
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;

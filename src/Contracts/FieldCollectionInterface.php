@@ -6,7 +6,7 @@
  * Time: 10:21
  */
 
-namespace DelocalZrt\SimpleCrud\Contracts;
+namespace Endorbit\SimpleCrud\Contracts;
 
 
 interface FieldCollectionInterface

@@ -6,11 +6,11 @@
  * Time: 10:33
  */
 
-namespace DelocalZrt\SimpleCrud\Events;
+namespace Endorbit\SimpleCrud\Events;
 
-use DelocalZrt\SimpleCrud\Contracts\FieldCollectionInterface;
-use DelocalZrt\SimpleCrud\Services\CrudEvent;
-use DelocalZrt\SimpleCrud\Services\SavingRequestCollection;
+use Endorbit\SimpleCrud\Contracts\FieldCollectionInterface;
+use Endorbit\SimpleCrud\Services\CrudEvent;
+use Endorbit\SimpleCrud\Services\SavingRequestCollection;
 use Illuminate\Broadcasting\InteractsWithSockets;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Foundation\Events\Dispatchable;

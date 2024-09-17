@@ -6,10 +6,10 @@
  * Time: 10:15
  */
 
-namespace DelocalZrt\SimpleCrud\Services;
+namespace Endorbit\SimpleCrud\Services;
 
 
-use DelocalZrt\SimpleCrud\Exceptions\UserCanSeeException;
+use Endorbit\SimpleCrud\Exceptions\UserCanSeeException;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;

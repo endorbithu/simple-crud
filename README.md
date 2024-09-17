@@ -61,7 +61,7 @@ Mivel a package composer.json -jában szerepel a
 "extra": {
     "laravel": {
       "providers": [
-        "DelocalZrt\\SimpleCrud\\Providers\\SimpleCrudServiceProvider"
+        "Endorbit\\SimpleCrud\\Providers\\SimpleCrudServiceProvider"
       ]
     }
   }
@@ -80,7 +80,7 @@ Publikáljuk a packaget = alkalmazza a providert és tartalmát:
 php artisan vendor:publish
  Which provider or tag's files would you like to publish?:
   [0 ] Publish files from all providers and tags listed below
-  [1 ] Provider: DelocalZrt\SimpleCrud\Providers\SimpleCrudServiceProvider
+  [1 ] Provider: Endorbit\SimpleCrud\Providers\SimpleCrudServiceProvider
 ```
 
 ## Működés
@@ -99,12 +99,12 @@ A `config/simplecrud.php` -ban széleskörűen tudjuk állítani a :
 
 ### Helper
 
-`DelocalZrt\SimpleCrud\Services\SimpleCrudHelper` ben van / lesz pár közérdekű fg, pl. `getSimpleCrudableAppModelClasses()`
+`Endorbit\SimpleCrud\Services\SimpleCrudHelper` ben van / lesz pár közérdekű fg, pl. `getSimpleCrudableAppModelClasses()`
 
 ### Modellek hozzáadása CRUD scopehoz
 
 Ha egy Eloquent modelt szeretnénk a CRUD műveletek hatókörébe tenni, akkor az adott eloquent modelnek implementálnia
-kell a `DelocalZrt\SimpleCrud\Contracts\CrudModelInterface` interface-t, ahol egy fg-t kell
+kell a `Endorbit\SimpleCrud\Contracts\CrudModelInterface` interface-t, ahol egy fg-t kell
 kidolgoznunk ` public static function getAttributesInfo(): array` , továbbá érdemes beállítani az adott modelnél
 a  `public static $title` property-t különben a class nevével lesz hivatkozva rá. Ha nincsenek speciális mezők, más
 dolgunk nincs is. Egy tömb elem így épül fel:
@@ -235,7 +235,7 @@ kapcsolatokat oldjuk itt meg vele lsd lejjeb.
 
 A megjelenés testreszabása mellett a logikába is bele tudunk nyúlni, minden érdemi adathoz hozzáférünk. Ehhez Létre kell
 hoznunk az `App\SimpleCrud` mappában az eloquent Model nevével megegyező php fájlt, ami lényegében egy
-**listener**, ennek implementálnia kell a `DelocalZrt\SimpleCrud\Contracts\SimpleCrudListenerInterface`. Itt lehet
+**listener**, ennek implementálnia kell a `Endorbit\SimpleCrud\Contracts\SimpleCrudListenerInterface`. Itt lehet
 elkapni minden eventet futás közben, és minden érdemi adatot módosítani/törölni/hozzáadni, és az eseményekhez további
 műveletet hozzáfűzni, ha kell.
 
@@ -359,7 +359,7 @@ Ezzel a gombbal egy sima link gombot lehet hozzáadni a toolbar-hoz (ezért van 
 
 Az exceptionöket `APP_DEBUG=false` módban nem mutatja, hanem csak logolja a `simplecrud-{datum}.log` (daily) ba, és a
 log azonosító számot kiírja hibasávba, hogy könnyebben lehessen keresni. Ha valamilyen
-listenerben `DelocalZrt\SimpleCrud\Exceptions\UserCanSeeException` vagy `SimpleCrudPermissionDeniedException`-t dobunk,
+listenerben `Endorbit\SimpleCrud\Exceptions\UserCanSeeException` vagy `SimpleCrudPermissionDeniedException`-t dobunk,
 akkor az exception `message`-t hibaüzenetben ki fogja írni kulturáltan a hibasávba a usernek vagy ha nincs szöveg hozzá,
 akkor az alapértelemezett:
 **Hiba lépett fel a művelet során!**
