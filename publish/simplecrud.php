@@ -10,7 +10,7 @@ return [
 
     //ha van / jel az elemben, az azt jelentoi, hogy a base_path($elem) ben található mappák nevei lesznek hozzáadva namespacenek
     'namespaces' => [
-        'App', 'app_modules/'
+        'App'
     ],
 
     'own_error_handling' => true,
