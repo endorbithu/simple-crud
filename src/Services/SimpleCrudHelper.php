@@ -71,7 +71,9 @@ class SimpleCrudHelper
             $paths['App'] = app_path() . "/Models";
         }
 
-        foreach (config('simplecrud.namespaces') as $ns) {
+        $namespaces = array_unique(array_merge_recursive(['Endorbit\SimpleCrud'], config('simplecrud.namespaces')));
+
+        foreach ($namespaces as $ns) {
             if ($ns === 'App') {
                 continue;
             }
@@ -182,7 +184,9 @@ class SimpleCrudHelper
 
     public static function getFullSimpleCrudClassFromClassBasename(string $classBasename, string $midDir = 'Models')
     {
-        foreach (config('simplecrud.namespaces') as $ns) {
+        $namespaces = array_unique(array_merge_recursive(['Endorbit\SimpleCrud'], config('simplecrud.namespaces')));
+
+        foreach ($namespaces as $ns) {
 
             if (strpos($ns, '/') !== false && file_exists(base_path($ns))) {
                 foreach (File::directories(base_path($ns)) as $dir) {
